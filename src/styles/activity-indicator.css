@@ -1,0 +1,18 @@
+.activity-indicator {
+    @apply relative before:contents;
+
+    &::before {
+        @apply pointer-events-none absolute top-0 left-0 z-50 block h-full w-full rounded-lg bg-gradient-to-r from-white/10 via-white/90 to-white/10 bg-[length:200%_100%];
+        animation: overlayActivityIndicator 2s linear infinite forwards;
+    }
+}
+
+@keyframes overlayActivityIndicator {
+    0% {
+        background-position: -200% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}

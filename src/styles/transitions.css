@@ -1,0 +1,40 @@
+:root {
+    /* Enables width/height transitions from 0 to auto */
+    interpolate-size: allow-keywords;
+}
+
+.subtle-slide-fade-enter-active,
+.subtle-slide-fade-leave-active {
+    transition: 0.05s 0.1s ease-out;
+    transition-property: transform, opacity;
+    transform: translateY(0);
+}
+
+.subtle-slide-fade-enter-from,
+.subtle-slide-fade-leave-to {
+    opacity: 0;
+    transition: 0.05s ease-out;
+    transition-property: transform, opacity;
+    transform: translateY(-3px);
+}
+
+.subtle-slide-fade-leave-to {
+    transform: translateY(3px);
+}
+
+.fade-enter-active,
+.subtle-slide-fade-leave-active {
+    transition: 0.1s ease-out;
+    transition-property: transform, opacity;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+    transition: opacity 0.1s ease-out;
+}
+
+a,
+button {
+    @apply transition-[color,opacity] duration-200;
+}

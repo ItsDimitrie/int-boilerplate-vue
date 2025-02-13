@@ -1,0 +1,42 @@
+@layer base {
+    body {
+        @apply text-gray-700;
+    }
+
+    h1,
+    h2,
+    h3 {
+        @apply font-bold last:mb-0;
+    }
+
+    h1 {
+        @apply mb-6 text-xl;
+    }
+
+    h2 {
+        @apply mb-4 text-lg;
+    }
+
+    h3 {
+        @apply mb-2;
+    }
+
+    p {
+        @apply mb-6 last:mb-0;
+    }
+
+    button,
+    [role='button'] {
+        cursor: pointer;
+    }
+}
+
+@layer components {
+    .default-link {
+        @apply hover:text-primary disabled:pointer-events-none disabled:opacity-50;
+    }
+
+    .default-link-primary {
+        @apply text-primary underline hover:no-underline disabled:pointer-events-none disabled:opacity-50;
+    }
+}

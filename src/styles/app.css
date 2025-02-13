@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+@theme {
+    --color-primary: #e61728;
+    --color-primary-50: #fff1f2;
+    --color-primary-100: #ffe0e3;
+    --color-primary-200: #ffc7cc;
+    --color-primary-300: #ff9fa7;
+    --color-primary-400: #ff6874;
+    --color-primary-500: #fa3949;
+    --color-primary-600: #e61728;
+    --color-primary-700: #c31221;
+    --color-primary-800: #a1131f;
+    --color-primary-900: #86161f;
+    --color-primary-950: #49060c;
+
+    --nav-panel-width: 300px;
+    --breakpoint-xl-nav: 1280px;
+    --max-width-compact: 400px;
+    --transition-timing-function-in-out-expo: cubic-bezier(0.8, 0, 0.1, 0.8);
+}
+
+@import 'primeicons/primeicons.css';
+@import '@/styles/transitions.css';
+@import '@/styles/typography.css';
+@import '@/styles/activity-indicator.css';
